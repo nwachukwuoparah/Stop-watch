@@ -15,24 +15,23 @@ body {
 	background-color: var(--dark);
 	color: var(--light);
 }
-
 .watch {
-	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
 	background-color: var(--darkdark );
-	width: 100%;
-	max-width: 360px;
-	margin: 4rem auto;
-	padding: rem 5rem;
-	border-radius: 1rem;
-}
-
-
-.watch .time {
-	font-size: 5rem;
-	font-weight: 300;
+	transform: translate(-50%, -50%);
+	border:none;
+	padding: 10px;
+	border-radius: 2rem;
+	}
+	.watch .time {
+		left: 50%;
+		top: 50%;
+		font-size: 5rem;
+	font-weight: 20;
 	margin-bottom: 1rem;
-}
-
+	}
 .controls {
 	display: flex;
 	align-items: center;
