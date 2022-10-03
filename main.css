@@ -4,30 +4,38 @@
 	--darkdark: grey;
 	--light: #F3F4F6;
 }
-
+#setTime form{
+	align-items: center;
+} 
 * {
-	margin: 0;
-    padding-left:3px;
-	/* box-sizing: border-box; */
-	font-family: 'Fira sans', sans-serif;
+	margin: auto;
+    padding-left:0px;
+	box-sizing: border;	font-family: 'Fira sans', sans-serif;
 }
-
-body {
+#audio {
+    padding:10px;
+}
+body{
 	background-color: var(--dark);
 	color: var(--light);
 }
 
-.watch {
+#watch {
+	/* display:flex; */
+	/* align-items:center; */
 	text-align: center;
 	background-color: var(--darkdark);
 	width: 100%;
 	max-width: 360px;
-	margin: 4rem auto;
+	margin-top: 12%;
+	margin-bottom:10%;
+	margin-left:20%;
+	margin-right:10%;
 	padding: 1rem 2rem;
 	border-radius: 1rem;
 }
 
-.watch .time {
+#watch .time {
 	font-size: 5rem;
 	font-weight: 300;
 	margin-bottom: 1rem;
