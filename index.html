@@ -5,22 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" />
-    <title>Stop watch</title>
+    <title>Stop Watch</title>
+    <!-- for Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="watch">
-        <div class="time">
-            00:00:00
-        </div>
-        <div class="controls">
-            <button id="start">Start</button>
-            <button id="stop">Stop</button>
-            <button id="reset">Reset</button>
+    <div class="main_header">
+        <div class="watch">
+            <div class="time">
+                00:00:00
+            </div>
+            <div class="controls">
+                <button id="start"><i class="material-icons header_account">start</i></button>
+                <button id="stop"><i class="material-icons header_account">stop</i></button>
+                <button id="reset"><i class="material-icons header_account">restart_alt</i></button>
+            </div>
         </div>
     </div>
-
     <script src="main.js"></script>
 </body>
 

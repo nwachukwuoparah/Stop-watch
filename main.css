@@ -1,66 +1,73 @@
 :root {
-	--primary: #2a2929;
-	--dark: whitesmoke;
-	--darkdark: grey;
-	--light: #F3F4F6;
+    --primary: #000000;
+    --dark: rgb(168, 165, 165);
+    --darkdark: rgb(92, 92, 92);
+    --light: #ffffff;
 }
 
 * {
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Fira sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
 }
 
 body {
-	background-color: var(--dark);
-	color: var(--light);
+    background-color: var(--dark);
+    color: var(--light);
+}
+.main_header{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .watch {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	background-color: var(--darkdark );
-	transform: translate(-50%, -50%);
-	border:none;
-	padding: 10px;
-	border-radius: 2rem;
-	}
-	.watch .time {
-		left: 50%;
-		top: 50%;
-		font-size: 5rem;
-	font-weight: 20;
-	margin-bottom: 1rem;
-	}
+    width:20rem;
+    background-color: var(--darkdark);
+    border: none;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+
+
+.watch .time {
+    font-size: 5rem;
+    font-weight: 20;
+    margin-bottom: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 .controls {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+
 }
 
 .controls button {
-	appearance: none;
-	background: none;
-	outline: none;
-	border: none;
-	cursor: pointer;
+    
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 
-	margin: 0.5rem;
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
+    color:var(--primary);
 
-	color: #FFF;
-	background-color: var(--primary);
-
-	transition: 1.4s;
-	user-select: none;
+    transition: 1.4s;
+    user-select: none;
 }
 
 .controls button:hover {
-	opacity: 0.7;
+    opacity: 0.7;
     transform: scale(1.1);
 }
 
 .controls button:active {
-	background-color: var(--dark);
+    background-color: var(--dark);
 }
